@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  TheFirstTestTask
 //
-//  Created by KirRealDev on 27.01.2021.
+//  Created by KirRealDev 
 //  Copyright © 2021 KirRealDev. All rights reserved.
 //
 
