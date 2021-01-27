@@ -1,6 +1,6 @@
 ## The technical tack:
 
-* Implement an iOS app in Obj-C with 2 screens:  
+Implement an iOS app in Obj-C with 2 screens:  
 
   1st (screenName = "list screen")
     * a tableView with 10 rows of static strings (values don't matter, can be random strings)
