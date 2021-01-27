@@ -59,10 +59,6 @@
     NSLog(@"ListScreen: viewDidDisappear");
 }
 
-- (void)deinit {
-    NSLog(@"ListScreen: deinit");
-}
-
 // TableView methods:
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
