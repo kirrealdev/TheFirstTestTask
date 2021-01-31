@@ -10,9 +10,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol DetailScreenDelegate <NSObject>
+
+@required
+- (void)dismissDetailScreen;
+
+@end
+
 @interface DetailScreenController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIButton *closeDetailScreen;
+@property (nonatomic, weak) id <DetailScreenDelegate> delegate;
 
 - (IBAction)pushCloseDetailScreenButton:(id)sender;
 

@@ -57,7 +57,7 @@
 
 // IBAction method:
 - (void)pushCloseDetailScreenButton:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.delegate dismissDetailScreen];
 }
 
 @end

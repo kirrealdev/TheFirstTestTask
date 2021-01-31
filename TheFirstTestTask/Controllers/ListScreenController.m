@@ -7,7 +7,6 @@
 //
 
 #import "ListScreenController.h"
-#import "DetailScreenController.h"
 
 @interface ListScreenController ()
 
@@ -73,7 +72,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     DetailScreenController *detailScreen = [self.storyboard instantiateViewControllerWithIdentifier:@"detailScreen"];
+    detailScreen.delegate = self;
     [self presentViewController:detailScreen animated:YES completion:nil];
+}
+
+// DetailScreenDelegate method:
+
+- (void)dismissDetailScreen {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
